@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title> Log in Page</title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 
     body, html{
@@ -39,22 +46,32 @@
 
 
 </style>
+</head>
 <body>
 
 <h2 align>Login Form</h2>
 
 
-<div class="container">
-    <label><b>Username</br></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label></br><b>Password</br></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Let me in</button>
-</div>
-
-</form>
+    <div class="row" >
+        <div class="col-md-4"></div>
+        <div class="col-md-4"  style="background-color:whitesmoke;">
+                      
+              
+              <form th:action="@{/login}" method="post"">
+                  <h2>Log in</h2><br>
+                <div class="form-group">
+                  <label for="ex3">Email:</label>
+                  <input type="email" class="form-control"  id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+                  <button type="submit" class="btn btn-default">SLet me in!</button>
+              </form>
+            </div>
+        </div>
+   <div class="col-md-4"  ></div>
 
 </body>
 </html>
