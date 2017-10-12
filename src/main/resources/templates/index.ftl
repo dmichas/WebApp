@@ -45,8 +45,7 @@
  <h1><a href="/register">Sign Up</a></h1>
  <h1><a href="/login">Log In</a></h1>
  </#if>
-<iframe width="420" height="345" src="https://youtu.be/89ZD-lxKMDY">
-</iframe>
+
 </div>
 
 </body>
